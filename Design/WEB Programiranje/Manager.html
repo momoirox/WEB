@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Manager.css">
+    <title>Manager</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="main-banner d-flex align-items-center  text-center">
+            <div class="container">
+                <h2 class="text-white">Upravljanje restoranom</h2>
+            </div>
+            <span id="black-overlay"></span>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+
+    <section class="container mt-4">
+        <p class="fw-bold fs-20">Dodajte novi proizvod u restoran</p>
+        <form action="#">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="productName">Unesite ime proizvoda: </label>
+                    <input type="text" id="productName" class=" mt-2 input-custom" placeholder="Ime proizvoda" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="price">Unesite cijenu proizvoda: </label>
+                    <input type="number" id="price" class=" mt-2 input-custom" placeholder="Unesite cijenu" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="type">Unesite tip proizvoda: </label>
+                    <select data-trigger="" id="type" class="input-custom mt-2">
+                        <option placeholder="" value="">Tip proizvoda</option>
+                        <option>Hrana</option>
+                        <option>Piće</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="productPicture">Unesite sliku proizvoda: </label>
+                    <input type="file" id="productPicture" class=" mt-2 input-custom" placeholder="Slika proizvoda"
+                        required>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label for="aboutProduct">Unesite opis proizvoda: </label>
+                    <textarea type="text" id="aboutProduct" class=" mt-2 input-custom"
+                        placeholder="Opis proizvoda"> </textarea>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label for="productQty">Unesite količinu proizvoda: </label>
+                    <input type="number" id="productQty" class=" mt-2 input-custom" placeholder="Količina proizvoda">
+                </div>
+            </div>
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary fw-600 mt-3">Dodaj proizvod</button>
+            </div>
+        </form>
+
+
+    </section>
+
+
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>

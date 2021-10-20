@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="stylesheet" href="Admin.scss">
+</head>
+
+<body>
+
+    <section>
+        <div class="main-banner d-flex align-items-center  text-center">
+            <div class="container">
+                <h2 class="text-white">Admin panel</h2>
+            </div>
+            <span id="black-overlay"></span>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+
+    <section class="container mt-4">
+        <p class="fw-bold fs-20">Kreirajte novi restoran</p>
+        <form action="#">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="restourantName">Unesite ime restorana: </label>
+                    <input type="text" id="restourantName" class=" mt-2 input-custom" placeholder="Ime restorana"
+                        required>
+                </div>
+                <div class="col-md-3">
+                    <label for="status">Da li restoran radi: </label>
+                    <select data-trigger="" id="status" class="input-custom mt-2">
+                        <option placeholder="" value="">Status restorana</option>
+                        <option>Da</option>
+                        <option>Ne</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="type">Unesite tip restorana: </label>
+                    <select data-trigger="" id="type" class="input-custom mt-2">
+                        <option placeholder="" value="">Tip restorana</option>
+                        <option>Poslastičarnica</option>
+                        <option>Pekara</option>
+                        <option>Fastfood</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="restourantPicture">Unesite logo restorana: </label>
+                    <input type="file" id="restourantPicture" class=" mt-2 input-custom" placeholder="Slika proizvoda"
+                        required>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label for="place">Unesite lokaciju restorana: </label>
+                    <select data-trigger="" id="place" class="input-custom mt-2">
+                        <option placeholder="" value="">Lokacija</option>
+                        <option>Bijeljina</option>
+                        <option>Brčko</option>
+                        <option>Novi Sad</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label for="manager">Unesite menadžera restorana: </label>
+                    <select data-trigger="" id="manager" class="input-custom mt-2">
+                        <option placeholder="" value="">Menadžer</option>
+                        <option>Đuro Đurić</option>
+                        <option>Pero Perić</option>
+                        <option>Nikola Nikić</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary fw-600 mt-3">Dodaj restoran</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- section 3 -->
+
+    <section class="container mt-4">
+        <p class="fw-bold fs-20">Prikaz svih registrovanih korisnika</p>
+        <label for="name">Unesite ime korisnika:</label>
+        <form class="example mt-2">
+            <input type="text" id="name" class="input-custom1" placeholder="Pretraga.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div class="ftco-section mt-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-wrap">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Korisnik</th>
+                                    <th>Pol</th>
+                                    <th>Uloga</th>
+                                    <th>Tip kupca</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">0</th>
+                                    <td>Desanka Maksimović</td>
+                                    <td>Ž</td>
+                                    <td>Administrator</td>
+                                    <td>N/A</td>
+                                    <td><a href="#" class="btn btn-success">Aktivan</a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Maja Blagić</td>
+                                    <td>Ž</td>
+                                    <td>Dostavljač</td>
+                                    <td>N/A</td>
+                                    <td><a href="#" class="btn btn-success">Aktivan</a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Laza Lazarević</td>
+                                    <td>M</td>
+                                    <td>Kupac</td>
+                                    <td>Srebreni</td>
+                                    <td><a href="#" class="btn btn-danger">Deaktiviran</a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Jovan Dučić</td>
+                                    <td>M</td>
+                                    <td>Dostavljač</td>
+                                    <td>N/A</td>
+                                    <td><a href="#" class="btn btn-success">Aktivan</a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Nikola Tesla</td>
+                                    <td>M</td>
+                                    <td>Menadžer</td>
+                                    <td>N/A</td>
+                                    <td><a href="#" class="btn btn-danger">Deaktiviran</a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Savo Savanović</td>
+                                    <td>M</td>
+                                    <td>Kupac</td>
+                                    <td>Bronzani</td>
+                                    <td><a href="#" class="btn btn-danger">Deaktiviran</a></td>
+
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Stepa Stepanović</td>
+                                    <td>M</td>
+                                    <td>Menadžer</td>
+                                    <td>N/A</td>
+                                    <td><a href="#" class="btn btn-success">Aktivan</a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Radomir Putnik</td>
+                                    <td>M</td>
+                                    <td>Kupac</td>
+                                    <td>Zlatni</td>
+                                    <td><a href="#" class="btn btn-success">Aktivan</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Restourant.css">
+    <title>Restoran</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="main-banner d-flex align-items-center  text-center">
+            <div class="container">
+                <h2>Lista restorana u Vašoj blizini</h2>
+            </div>
+            <span id="black-overlay"></span>
+        </div>
+    </section>
+    <section class="container">
+        <div class="filter-head">
+            <div class="s009">
+                <form>
+                    <div class="inner-form">
+                        <div class="basic-search">
+                            <div class="input-field">
+                                <input id="search" type="text" placeholder="Unesite ime restorana" />
+                                <div class="icon-wrap">
+                                    <svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true"
+                                        data-prefix="fas" data-icon="search" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advance-search">
+                            <span class="desc">NAPREDNA PRETRAGA</span>
+                            <div class="row">
+                                <div class="input-field">
+                                    <div class="input-select">
+                                        <select data-trigger="" class="input-custom" name="choices-single-defaul">
+                                            <option placeholder="" value="">Lokacija</option>
+                                            <option>Bijeljina</option>
+                                            <option>Brčko</option>
+                                            <option>Novi Sad</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <div class="input-select">
+                                        <select data-trigger="" class="input-custom" name="choices-single-defaul">
+                                            <option placeholder="" value="">Tip restorana</option>
+                                            <option>Pekara</option>
+                                            <option>Poslastičarnica</option>
+                                            <option>Fast Food</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <div class="input-select">
+                                        <select data-trigger="" class="input-custom" name="choices-single-defaul">
+                                            <option placeholder="" value="">Ocena</option>
+                                            <option>2+</option>
+                                            <option>3+</option>
+                                            <option>4+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row third">
+                                <div class="input-field">
+                                    <div class="result-count">
+                                        <span>5 </span>rezultata
+                                    </div>
+                                    <div class="group-btn">
+                                        <button class="btn-delete" id="delete">RESET</button>
+                                        <button class="btn-search">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <p class="fw-bold fs-20"><span id="restourant-numb">3</span> restorana</p>
+        <div class="restourant-search py-3">
+            <div class="row align-items-center ">
+                <div class="col-4">
+                    <img src="assets/imgs/restourant-1.jpg" class="restourant-logo" alt="assets/imgs/restourant-1.jpg">
+                </div>
+                <div class="col-8">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div>
+                            <p class="restourant-name ">House bar & kitchen</p>
+                            <span class="restourant-price">Pica - 40' • Min. 6,00KM • Besplatna dostasva</span>
+                        </div>
+                        <div class="restourant-mark">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <hr>
+                </div>
+                <div class="col-4">
+                    <img src="assets/imgs/restourant-2.jpg" class="restourant-logo" alt="assets/imgs/restourant-2.jpg">
+                </div>
+                <div class="col-8">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div>
+                            <p class="restourant-name ">Concept caffe Bulevar</p>
+                            <span class="restourant-price">Internacionalna hrana - 35' • Min. 3,00KM • Besplatna
+                                dostasva</span>
+                        </div>
+                        <div class="restourant-mark">
+                            <i class="fas fa-star"></i>
+                            <span>4.3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <hr>
+                </div>
+                <div class="col-4">
+                    <img src="assets/imgs/restourant-3.jpg" class="restourant-logo" alt="assets/imgs/restourant-3.jpg">
+                </div>
+                <div class="col-8">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div>
+                            <p class="restourant-name ">Pasta bar Bijeljina</p>
+                            <span class="restourant-price">Paste - 30' • Min. 2,00KM • Dostava 2,00KM</span>
+                        </div>
+                        <div class="restourant-mark">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <p class="fw-bold fs-20">Zatvoreni objekti</p>
+        <div class="restourant-search py-3">
+            <div class="row align-items-center ">
+                <div class="col-4">
+                    <img src="assets/imgs/restourant-4.jpg" class="restourant-logo" alt="assets/imgs/restourant-4.jpg">
+                </div>
+                <div class="col-8">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div>
+                            <p class="restourant-name ">San Marco Bijeljina</p>
+                            <span class="restourant-price">Pica - 40' • Min. 6,00KM • Besplatna dostasva</span>
+                        </div>
+                        <div class="restourant-mark">
+                            <i class="fas fa-star"></i>
+                            <span>4.1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="mt-5">
+        <hr>
+        <div class="container">
+            <p class="text-center text-muted">© 2021 Sva prava su rezervisana. Projekat iz WEB programiranja</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+
+</html>

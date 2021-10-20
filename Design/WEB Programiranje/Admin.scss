@@ -1,0 +1,54 @@
+// Color system
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+.table {
+  min-width: 1000px !important;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+  thead {
+    th {
+      border: none;
+      padding: 30px;
+      font-size: 13px;
+      color: $black;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    tr {
+      background: $white;
+    }
+  }
+  tbody {
+    tr {
+      background: $white;
+    }
+    th,
+    td {
+      border: none;
+      padding: 20px 30px;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    td {
+      .close {
+        span {
+          font-size: 12px;
+          color: $danger;
+        }
+      }
+    }
+  }
+}
