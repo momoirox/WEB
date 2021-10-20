@@ -1,0 +1,24 @@
+<html>
+    <head>
+    <meta http-equiv="Content-type" content="text/html: charset=utf-8" />
+        <script type="text/javascript">
+            function pera() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        function(position) {
+                            alert(position.coords.latitude + ", " + position.coords.longitude);
+                        });
+                } else {
+                    alert("No geolocation");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <button onclick="pera()">Pronađi me</button>
+        <br />
+        <a href="../index.html">Nazad</a>
+        
+    </body>
+</html>

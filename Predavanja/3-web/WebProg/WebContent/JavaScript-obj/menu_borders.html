@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<script type="text/javascript">
+function inset(elmnt)
+{
+elmnt.style.borderStyle="inset";
+}
+
+function outset(elmnt)
+{
+elmnt.style.borderStyle="outset";
+}
+</script>
+
+<style>
+td
+{
+background:C0C0C0;
+border:2px outset;
+}
+
+</style>
+</head>
+<body>
+
+<table width="80">
+	<tr><td onmouseover="inset(this)" onmouseout="outset(this)"><a href="index.html">HOME</a></td></tr>
+	<tr><td onmouseover="inset(this)" onmouseout="outset(this)"><a href="https://www.w3schools.com/js/">JavaScript</a></td></tr>
+	<tr><td onmouseover="inset(this)" onmouseout="outset(this)"><a href="https://www.microsoft.com/en-us/edge">Edge</a></td></tr>
+	<tr><td onmouseover="inset(this)" onmouseout="outset(this)"><a href="https://www.google.com/intl/sr/chrome/">Chrome</a></td></tr>
+	<tr><td onmouseover="inset(this)" onmouseout="outset(this)"><a href="https://www.mozilla.org/sr/firefox/new/">Firefox</a></td></tr>
+	<tr><td onmouseover="inset(this)" onmouseout="outset(this)"><a href="https://support.apple.com/downloads/safari">Safari</a></td></tr>
+</table>
+<br /><a href="index.html">Nazad</a>
+</body>
+</html>

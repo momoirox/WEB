@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\mx\Desktop\treæa godina\VEB\vježbe\6 - JSP_JSTL_EL\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1882290645.index
+\WebShop\src

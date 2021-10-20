@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+table {
+	background:black;
+}
+
+a {
+	text-decoration:none;
+	color:#000000;
+}
+
+th {
+	width:150px;
+	background:#FF8080;
+}
+
+td {
+	font:bold;
+	background:#ADD8E6;
+}
+</style>
+<script type="text/javascript">
+function gettip(txt) {
+	document.getElementById('tip').innerHTML=txt;
+}
+function reset() {
+	document.getElementById('tip').innerHTML=" ";
+}
+</script>
+</head>
+
+<body>
+<b>Postavite kursor iznad linkova da vidite opise pojmova </b><br />
+<table width="400px">
+	<tr>
+		<th>
+			<a href="http://www.w3schools.com" 
+				onmouseover="gettip('W3Schools is <b>the best</b> Web Developers resource on the Web')"
+				onmouseout="reset()">W3Schools.com</a>
+		</th>
+		<td rowspan="3" id="tip"> </td>
+	</tr>
+	<tr>
+		<th>
+			<a href="https://www.mozilla.org/sr/firefox/new/" onMouseOver="gettip('Firefox is a good browser.')"
+				onmouseout="reset()">Firefox browser</a>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<a href="https://www.google.com/intl/sr/chrome/" onMouseOver="gettip('Chrome is a good browser.')"
+				onmouseout="reset()">Chrome browser</a>
+		</th>
+	</tr>
+</table>
+<br /><a href="index.html">Nazad</a>
+</body>
+</html>

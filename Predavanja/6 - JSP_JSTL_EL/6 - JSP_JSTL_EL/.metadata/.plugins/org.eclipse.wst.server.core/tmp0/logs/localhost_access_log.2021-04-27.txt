@@ -1,0 +1,11 @@
+127.0.0.1 - - [27/Apr/2021:10:45:46 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:10:45:55 +0200] "GET /WebShop/ HTTP/1.1" 200 399
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:10:46:06 +0200] "GET /WebShop/ HTTP/1.1" 200 399
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:10:46:07 +0200] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:10:46:54 +0200] "POST /WebShop/LoginServlet HTTP/1.1" 200 467
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:10:47:51 +0200] "POST /WebShop/LoginServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:10:47:52 +0200] "POST /WebShop/LoginServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:10:47:52 +0200] "GET /WebShop/ProductServlet HTTP/1.1" 200 983
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:10:47:52 +0200] "GET /WebShop/ProductServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:40:00 +0200] "GET /WebShop/LogoutServlet HTTP/1.1" 500 -
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:40:00 +0200] "GET /WebShop/LogoutServlet HTTP/1.1" 500 1809

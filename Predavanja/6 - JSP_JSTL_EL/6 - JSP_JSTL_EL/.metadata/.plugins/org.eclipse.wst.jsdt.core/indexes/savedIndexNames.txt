@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\mx\Desktop\treæa godina\VEB\vježbe\6 - JSP_JSTL_EL\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+386820253.index
+2479172254.index
+3822339613.index
+2492283845.index
+946482857.index
+2537068639.index
+1882290645.index

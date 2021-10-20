@@ -1,0 +1,9 @@
+Postovani,
+
+Samo da napomenem par stvari koje ce nadam se da Vam olaksaju pregledanje.
+Rest zadatak nisam radila - radila sam samo prvi i drugi.
+Drugi zadatak pokrecite preko reg.jsp -a a ne preko reg html-a.
+
+Pozdrav,
+Maja Blagic.
+
